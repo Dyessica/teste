@@ -10,7 +10,8 @@ OffGame = (function(){
   };
 
   jqueryBtn = function() {
-    $('.box-lang-left > div').click(function() { saberQualClique($(this)); })
+    $('.box-lang-left > div').click(function() { saberQualClique($(this)); });
+    $('#class_css').click(function() { manipular_css(); });
   }
 
   saberQualClique = function(obj) {
@@ -41,9 +42,14 @@ OffGame = (function(){
     });
   };  
 
-  iniciarJavaScript = function(){
-    $('.title').text(data)
+  manipular_css = function() {
+    $('#troca_classe').toggleClass('ativo');
   };
+
+
+  // iniciarJavaScript = function(){
+  //   $('.title').text(data)
+  // };
 
  
 
